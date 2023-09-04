@@ -1,0 +1,345 @@
+.navWraper {
+  background-color: #541554;
+  color: #000;
+  font-weight: bold;
+  transition: 600ms ease;
+  width: 100%;
+}
+.navWraper.active {
+  background: #fff;
+  border-radius: 5rem;
+  margin-top: 5px;
+  transition: 600ms ease;
+  position: fixed;
+  width: 95vw;
+  margin-left: 2rem;
+}
+.navWraper.active .nav-search-icon {
+  color: #000;
+}
+.navWraper.active li,
+.navWraper.active a {
+  color: #000;
+  font-weight: 500;
+}
+.navWraper.active .nav-container {
+  padding: 1rem;
+}
+.nav-container {
+  padding: 1rem 0;
+}
+
+.nav-container a {
+  font-weight: 500;
+}
+.nav-left .display-none {
+  border-radius: 10px;
+}
+
+.nav-left .display-none.active {
+  background: #fff;
+
+  left: 0;
+  position: absolute;
+  top: 0;
+  margin-top: 2rem;
+  transition: 30ms ease;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
+  transition: 30ms ease;
+}
+.display-none {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.nav-left .display-none.inactive {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(30px);
+  transition: 300ms ease;
+}
+.nav-left {
+  position: relative;
+  color: #fff;
+}
+.coln-left .flexContent {
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+li {
+  cursor: pointer;
+}
+/* .left-img svg {
+  width: 200px;
+  height: 300px;
+} */
+.T-image {
+  width: 100% auto;
+  height: 100%;
+}
+
+.left-img b {
+  color: #000;
+  margin-bottom: 1rem;
+}
+.left-img .a-link {
+  padding-bottom: 1rem;
+}
+
+.left-img {
+  color: #000;
+}
+.left-img p {
+  margin-bottom: 1.5rem;
+}
+
+.coln-left {
+  width: 70vw;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.coln-left .flexColn {
+  gap: 1.5rem;
+  width: max-content;
+  align-content: flex-start;
+}
+.coln-left .flexColn a:hover {
+  color: #6a6af1;
+}
+.coln-left .flexColn a {
+  color: #555;
+  font-size: 13px;
+  font-weight: 300;
+}
+.coln-left .flexColn p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #535050;
+}
+.coln-left .flexColn p:hover {
+  color: #6a6af1;
+  text-decoration: underline;
+}
+.nav-left img {
+  width: 5rem;
+  height: 3rem;
+}
+/* right */
+.t-links-n-wraper {
+  gap: 1rem;
+}
+.right-n-wraper a {
+  color: #fff;
+}
+.right-n-wraper .nav-menu-icon {
+  display: none;
+}
+.right-n-wraper .nav-search-icon {
+  color: #fff;
+}
+.t-links-n-wraper a:nth-child(2) {
+  background: #fff;
+  color: #541554;
+  padding: 0.9rem 1.8rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.t-links-n-wraper a:nth-child(1) {
+  background: #541554;
+  color: #fff;
+  padding: 0.9rem 1.8rem;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+.t-links-n-wraper a:nth-child(3) {
+  background: #541554;
+  color: #fff;
+  padding: 0.9rem 1.8rem;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+.navWraper.active .t-links-n-wraper a:nth-child(3) {
+  background: none;
+  border: 1px solid #541554;
+  color: #541554;
+}
+.right-n-wraper .btn-download {
+  display: none;
+}
+
+.nav-left .navigation-buttons {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.navflexBtn .btn-In {
+  background: #fff;
+  border: 1px solid #541554;
+  color: #541554;
+  padding: 1rem 6rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.navflexBtn .btn-primary-Nav {
+  background: #541554;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 1rem 6rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.navWraper .nav-buttons {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #541554;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 5px;
+}
+.navWraper.active .nav-buttons {
+  background: #541554;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 5px;
+}
+@media screen and (max-width: 1240px) {
+  .nav-buttons {
+    display: none;
+  }
+}
+@media screen and (max-width: 1040px) {
+  nav {
+    overflow-x: hidden;
+  }
+  nav .nav-container {
+    width: 100%;
+    justify-content: space-between;
+    gap: 20rem;
+  }
+  .nav-left {
+    float: left;
+    flex-direction: column;
+    display: block;
+  }
+  /* RIGHT */
+
+  .navWraper {
+    width: auto;
+  }
+  .navWraper.active {
+    background: #fff;
+    border-radius: 0px;
+    margin: 0;
+    width: 100vw;
+  }
+  .nav-search-icon {
+    display: none;
+  }
+  .right-n-wraper .nav-menu-icon {
+    display: block;
+  }
+
+  .t-links-n-wraper a:nth-child(1) {
+    display: block;
+    padding: 10px;
+  }
+  .t-links-n-wraper a:nth-child(3) {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .t-links-n-wraper a:nth-child(2) {
+    display: none;
+  }
+  .nav-sign {
+    display: none;
+  }
+  .nav-left .generaled {
+    display: none;
+  }
+  .nav-left .generaled.active {
+    display: block;
+    background-color: #f4f4fa;
+    color: #000;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    transition: 300ms ease;
+    z-index: 1;
+  }
+  .right-n-wraper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    padding-right: 1rem;
+  }
+  .nav-left .navImage {
+    margin-left: -20rem;
+  }
+
+  .generaled li {
+    margin-bottom: 2rem;
+  }
+  .nav-left .generaled a {
+    margin-bottom: 1rem;
+  }
+  .generaled .nav-left .navigation-buttons {
+    margin-top: -7rem;
+    position: absolute;
+    text-align: center;
+  }
+  .display-none {
+    display: none;
+  }
+
+  .navigation-buttons .navflexBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-left .pricing-link {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    width: 100vw;
+  }
+  .btn {
+    padding: 0.9rem;
+  }
+  nav .nav-container {
+    width: 100%;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  .nav-left .navImage {
+    margin-left: -10rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  .nav-left .navImage {
+    margin-left: -10rem;
+  }
+}

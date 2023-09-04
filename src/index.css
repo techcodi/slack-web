@@ -1,0 +1,56 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+  overflow-x: hidden;
+}
+li {
+  list-style-type: none;
+  font-weight: 500;
+}
+.flexContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.flexColn {
+  display: flex;
+  justify-content: start;
+  align-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+b {
+  display: block;
+}
+h4 {
+  text-align: center;
+  padding-top: 3rem;
+  font-weight: 500;
+}
+img {
+  width: auto;
+  height: auto;
+}
+@media screen and (max-width: 950px) {
+  body {
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,132 @@
+.e-wraper .container span {
+  box-shadow: 0px 1px 20px #d0c7c7;
+  border-radius: 20px;
+  padding: 10px;
+}
+.flexContent-emoji {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+}
+.flexContent-emoji span:nth-child(1) {
+  font-size: 20px;
+  margin-left: 5rem;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+.flexContent-emoji span:nth-child(2) {
+  margin-right: 5rem;
+}
+.emoji-detail {
+  text-align: center;
+}
+.emoji-detail h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+.flexLink a:nth-child(1) {
+  background: #541554;
+  color: #fff;
+  padding: 1rem 2.3rem;
+  border-radius: 5px;
+}
+.flexLink .sale {
+  color: #541554;
+  background: #fff;
+  padding: 1rem 2.3rem;
+  border: 1px solid #541554;
+  border-radius: 5px;
+}
+.sale:hover {
+  border: 2px solid #541554;
+}
+
+.container .link {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.e-wraper .container {
+  padding: 3rem;
+}
+.e-wraper {
+  background: #fff;
+}
+/* PERCENTAGE SECTION */
+.p-wraper {
+  padding: 3rem 8rem;
+}
+.p-wraper h2 {
+  color: #541554;
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+/* VIDOE PLAY SECTION */
+.v-wraper span {
+  box-shadow: none;
+  font-style: italic;
+}
+.v-wraper .v-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.v-container .flexColn {
+  gap: 3rem;
+}
+.v-wraper video {
+  width: 50vw;
+  /* clip-path: inset(25px 0 25px 0 round 0 500px 500px 0); */
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.v-wraper-left p {
+  font-style: italic;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.v-link {
+  padding-top: 1rem;
+}
+.v-foot {
+  padding: 3rem;
+  text-align: center;
+}
+.v-foot span {
+  font-weight: 300;
+  font-size: 14px;
+  color: #555;
+}
+
+@media screen and (max-width: 1000px) {
+  .e-wraper span {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .link .flexLink {
+    flex-direction: column;
+  }
+  .link .flexLink a {
+    width: 100%;
+    text-align: center;
+  }
+  .p-wraper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .p-wraper .p-wraper-detail {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .v-wraper-left {
+    display: block;
+  }
+  .v-wraper {
+    display: none;
+  }
+}

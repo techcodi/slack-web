@@ -1,0 +1,90 @@
+.accordion-content a {
+  display: block;
+  margin-bottom: 1rem;
+  color: #555;
+}
+.accordion-content {
+  padding: 1rem 2rem;
+  transition: 300ms ease;
+}
+.accordion-item .flexContent {
+  gap: 20rem;
+  transition: 300ms ease;
+  width: fit-content;
+}
+.accordion-item {
+  display: block;
+  padding-left: 1rem;
+  display: none;
+}
+.title {
+  display: inline;
+}
+.accordion-img img {
+  display: none;
+  float: left;
+  height: 50%;
+  width: 20%;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .accordion-img img {
+    display: block;
+  }
+  .accordion-item {
+    display: block;
+    padding: 0 1rem;
+  }
+  .accordion-item .flexContent {
+    gap: 19rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  .accordion-item .flexContent {
+    gap: 20rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 12px;
+  }
+
+  .accordion-item .flexContent {
+    gap: 19rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .accordion-item {
+    max-width: 96vw;
+  }
+  .accordion-item .flexContent {
+    gap: 17rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .accordion-item {
+    max-width: 100vw;
+  }
+  .accordion-item .flexContent {
+    gap: 15rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  .accordion-item {
+    max-width: 96vw;
+  }
+  .accordion-item .flexContent {
+    gap: 12rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .accordion-item {
+    padding-left: -4rem;
+  }
+
+  .accordionIcon {
+    padding-right: 4rem;
+  }
+}
